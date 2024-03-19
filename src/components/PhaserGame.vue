@@ -14,8 +14,9 @@ export default {
   },
   methods: {
   clickStart() {
-    startGame('gameCanvas');
+    const game = startGame('gameCanvas');
     this.hasGameStarted = true
+    game.scene.resume('scene-game')
   }
 }
 
