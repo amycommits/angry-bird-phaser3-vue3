@@ -1,6 +1,6 @@
 <template>
+  <div v-show="hasGameStarted" id="gameCanvas" />
   <button v-if="!hasGameStarted" @click="clickStart">Start</button>
-  <canvas v-if="hasGameStarted" id="gameCanvas" />
 </template>
 <script>
 import { EventBus } from '../utils/EventBus';
